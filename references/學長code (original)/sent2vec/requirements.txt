@@ -1,5 +1,0 @@
-gensim
-spacy
-numpy
-torch
-transformers
