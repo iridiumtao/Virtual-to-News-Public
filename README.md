@@ -8,7 +8,7 @@ The “AI Editor-in-Chief” collects news from different websites, compiles dif
 
 The “Virtual News Presenter” generates videos of cute anime characters reporting news to make news-consuming entertaining, utilizes speech generating, lip syncing, facial landmark estimating, and Live2d with Unity
 
-## Architecture 特色
+## Architecture 架構
 
 ![Architecture](https://github.com/iridiumtao/Virtual-to-News-Public/assets/43561001/29602cc3-2313-41e4-848d-9c8707ae700f)
 
