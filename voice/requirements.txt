@@ -1,0 +1,23 @@
+Flask~=2.2.2
+requests~=2.28.1
+umap-learn
+visdom
+librosa>=0.8.0
+matplotlib>=3.3.0
+numpy==1.19.3; platform_system == "Windows"
+numpy==1.19.4; platform_system != "Windows"
+scipy>=1.0.0
+tqdm
+sounddevice
+SoundFile
+Unidecode
+inflect
+multiprocess
+numba
+webrtcvad; platform_system != "Windows"
+pypinyin
+flask_wtf
+flask_cors
+gevent==21.8.0
+tensorboard
+cn2an

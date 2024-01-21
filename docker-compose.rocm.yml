@@ -1,0 +1,45 @@
+# file version 0.1.3
+
+version: "3.8"
+
+services:
+  # 必須確保各個 service name 及其 ports 或 expose
+  # 與 Virtual-to-News/define.py 中的 host 及 port 完全一致
+
+  news-server:
+    # ROCm 使用
+    devices:
+      - "/dev/kfd"
+      - "/dev/dri"
+    # ROCm 使用
+    security_opt:
+      - seccomp=unconfined
+    # ROCm 使用
+    group_add:
+      - video
+
+
+  voice-server:
+    # ROCm 使用
+    devices:
+      - "/dev/kfd"
+      - "/dev/dri"
+    # ROCm 使用
+    security_opt:
+      - seccomp=unconfined
+    # ROCm 使用
+    group_add:
+      - video
+
+  lip-server:
+    # ROCm 使用
+    devices:
+      - "/dev/kfd"
+      - "/dev/dri"
+    # ROCm 使用
+    security_opt:
+      - seccomp=unconfined
+    # ROCm 使用
+    group_add:
+      - video
+

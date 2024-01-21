@@ -1,0 +1,35 @@
+# Ignore everything
+**
+
+# Allow files and directories
+!/audio.py
+!/Dockerfile
+!/hparams.py
+!/preprocess.py
+!/checkpoints/
+!/evaluation/
+!/hq_wav2lip_train.py
+!/README.md
+!/temp/
+!/color_syncnet_train.py
+!/face_detection/
+!/inference.py
+!/requirements.txt
+!/filelists/
+!/models/
+!/results/
+!/wav2lip_train.py
+!/assets/
+!/sources/
+!/lip_server.py
+!/outputs/
+!/define.py
+!/utils.py
+
+
+# Ignore unnecessary files inside allowed directories
+# This should go after the allowed directories
+**/*~
+**/*.log
+**/.DS_Store
+**/Thumbs.db

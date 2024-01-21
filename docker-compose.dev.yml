@@ -1,0 +1,76 @@
+# file version 0.1.3
+
+version: "3.8"
+
+services:
+  # 必須確保各個 service name 及其 ports 或 expose
+  # 與 Virtual-to-News/define.py 中的 host 及 port 完全一致
+
+  virtual-to-news: # 這是 service name
+    # 絕對路徑或相對路徑皆可。例如/home或./assets
+    # host:container
+    volumes: # 這是掛載磁區的地方（軟連結）
+      # 定義路徑、全域變數的檔案
+      - "./define.py:/app/define.py"
+      - "./outputs:/app/outputs"
+      # 開發環境中，將程式碼 mount 到 container 中，修改程式碼就不需要重新 build image
+      - "./vtn_server:/app"
+
+  file-server:
+    volumes:
+      - "./assets:/app/assets"
+      - "./outputs:/app/outputs"
+      # 定義路徑、全域變數的檔案
+      - "./define.py:/app/define.py"
+
+  news-server:
+    volumes:
+      # 定義路徑、全域變數的檔案
+      - "./define.py:/app/define.py"
+      # 所有子專案(服務)共用的生成結果輸出資料夾
+      - "./outputs:/app/outputs"
+      # model + json 資料庫 軟連結
+      - "./news/assets:/app/assets"
+      #- "./assets/model/ckiplab:/app/assets/model/ckiplab"
+      #- "./assets:/app/assets"
+      # 開發環境中，將程式碼 mount 到 container 中，修改程式碼就不需要重新 build image
+      - "./news:/app"
+
+  voice-server:
+    volumes:
+      # 定義路徑、全域變數的檔案
+      - "./define.py:/app/define.py"
+      # 所有子專案(服務)共用的生成結果輸出資料夾
+      - "./outputs:/app/outputs"
+      # model 軟連結
+      - "./voice/synthesizer/saved_models/mandarin_200k.pt:/app/synthesizer/saved_models/mandarin_200k.pt"
+      #- "./assets/model/synthesizer:/app/synthesizer/saved_models"
+      # 開發環境中，將程式碼 mount 到 container 中，修改程式碼就不需要重新 build image
+      - "./voice:/app"
+
+  lip-server:
+    volumes:
+      # 定義路徑、全域變數的檔案
+      - "./define.py:/app/define.py"
+      # 所有子專案(服務)共用的生成結果輸出資料夾
+      - "./outputs:/app/outputs"
+      # model 軟連結
+      - "./lip/base_video:/app/base_video"
+      - "./lip/checkpoints:/app/checkpoints"
+      #- "./assets/model/checkpoints:/app/checkpoints"
+      #- "./assets/base_video:/app/base_video"
+      # Unity 用，將錄製完成的檔案軟連結到 container 中，讓 vtuber 的 FFmpeg 得以結合影片並放入 ./outputs/uuid/ 資料夾中
+      - "${UNITY_VTUVER_PROJ_PATH}/unity_vtuber/Recordings:/app/unity_vtuber/Recordings"
+      # 開發環境中，將程式碼 mount 到 container 中，修改程式碼就不需要重新 build image
+      - "./lip:/app"
+
+  vtuber-server:
+    volumes:
+      # 定義路徑、全域變數的檔案
+      - "./define.py:/app/define.py"
+      - "./outputs:/app/outputs"
+      - "./lip/base_video:/app/lip/base_video"
+      # Unity 用，將錄製完成的檔案軟連結到 container 中，讓 vtuber 的 FFmpeg 得以結合影片並放入 ./outputs/uuid/ 資料夾中
+      - "${UNITY_VTUVER_PROJ_PATH}/Recordings:/app/unity_vtuber/Recordings"
+      # 開發環境中，將程式碼 mount 到 container 中，修改程式碼就不需要重新 build image
+      - "./vtuber:/app"

@@ -1,0 +1,50 @@
+port,proxy,retry,timeout,scheme,ip,country_name,anonymity,gooogle
+8080,http://118.27.113.167:8080,3,3,http,118.27.113.167,Japan,elite proxy,no
+1337,http://89.36.94.242:1337,3,3,http,89.36.94.242,Romania,anonymous,no
+8080,http://139.99.82.162:8080,3,3,http,139.99.82.162,Singapore,anonymous,no
+8118,http://161.97.126.37:8118,3,3,http,161.97.126.37,Germany,anonymous,no
+3128,http://119.8.236.97:3128,3,3,http,119.8.236.97,Hong Kong,anonymous,no
+1080,http://47.242.43.30:1080,3,3,http,47.242.43.30,Hong Kong,elite proxy,no
+3128,http://208.82.61.66:3128,3,3,http,208.82.61.66,United States,elite proxy,no
+8090,http://49.0.2.242:8090,3,3,http,49.0.2.242,Indonesia,elite proxy,no
+1337,http://93.114.194.26:1337,3,3,http,93.114.194.26,Romania,anonymous,no
+3128,http://43.154.69.42:3128,3,3,http,43.154.69.42,Hong Kong,elite proxy,no
+8080,http://198.59.191.234:8080,3,3,http,198.59.191.234,United States,elite proxy,no
+3128,http://51.159.115.233:3128,3,3,http,51.159.115.233,France,anonymous,yes
+3128,http://133.242.171.216:3128,3,3,http,133.242.171.216,Japan,elite proxy,no
+8080,http://134.238.252.143:8080,3,3,http,134.238.252.143,India,elite proxy,yes
+443,http://178.128.94.61:443,3,3,http,178.128.94.61,Singapore,elite proxy,yes
+3128,http://110.34.3.229:3128,3,3,http,110.34.3.229,Nepal,anonymous,no
+80,http://85.195.104.71:80,3,3,http,85.195.104.71,Germany,elite proxy,yes
+8118,http://139.59.228.95:8118,3,3,http,139.59.228.95,Singapore,elite proxy,yes
+9300,http://158.69.52.218:9300,3,3,http,158.69.52.218,Canada,elite proxy,no
+3129,http://134.73.3.157:3129,3,3,http,134.73.3.157,United States,elite proxy,no
+7777,http://182.18.83.42:7777,3,3,http,182.18.83.42,China,anonymous,
+8089,http://111.225.153.24:8089,3,3,http,111.225.153.24,China,anonymous,
+80,http://155.4.244.218:80,3,3,http,155.4.244.218,Sweden,anonymous,no
+3129,http://134.73.1.183:3129,3,3,http,134.73.1.183,United States,elite proxy,no
+3128,http://173.212.229.53:3128,3,3,http,173.212.229.53,Germany,anonymous,no
+8888,http://191.252.195.53:8888,3,3,http,191.252.195.53,Brazil,anonymous,no
+3128,http://14.140.131.82:3128,3,3,http,14.140.131.82,India,anonymous,no
+3128,http://145.40.121.153:3128,3,3,http,145.40.121.153,Brazil,anonymous,no
+999,http://181.198.6.251:999,3,3,http,181.198.6.251,Ecuador,anonymous,no
+3120,http://91.205.172.113:3120,3,3,http,91.205.172.113,Germany,anonymous,no
+8080,http://181.176.211.168:8080,3,3,http,181.176.211.168,Peru,anonymous,no
+3128,http://154.85.55.174:3128,3,3,http,154.85.55.174,United States,anonymous,no
+3128,http://85.14.243.31:3128,3,3,http,85.14.243.31,Germany,anonymous,no
+8085,http://195.225.232.3:8085,3,3,http,195.225.232.3,United Kingdom,anonymous,no
+3128,http://154.16.180.182:3128,3,3,http,154.16.180.182,United States,anonymous,no
+3128,http://101.32.184.53:3128,3,3,http,101.32.184.53,Hong Kong,anonymous,no
+3128,http://105.112.191.250:3128,3,3,http,105.112.191.250,Nigeria,anonymous,no
+3128,http://68.178.202.127:3128,3,3,http,68.178.202.127,United States,anonymous,no
+999,http://186.3.38.213:999,3,3,http,186.3.38.213,Ecuador,anonymous,no
+999,http://157.100.12.138:999,3,3,http,157.100.12.138,Ecuador,anonymous,yes
+8080,http://45.33.12.251:8080,3,3,http,45.33.12.251,United States,elite proxy,
+3128,http://52.81.70.148:3128,3,3,http,52.81.70.148,China,anonymous,
+3128,http://14.139.211.59:3128,3,3,http,14.139.211.59,India,anonymous,no
+1988,http://144.76.119.59:1988,3,3,http,144.76.119.59,Germany,anonymous,no
+8080,http://110.238.111.229:8080,3,3,http,110.238.111.229,Singapore,elite proxy,no
+8888,http://110.164.3.7:8888,3,3,Unknown,110.164.3.7,Thailand,anonymous,Unknown
+80,http://208.113.134.223:80,3,3,Unknown,208.113.134.223,United States,anonymous,Unknown
+8080,http://75.126.253.8:8080,3,3,Unknown,75.126.253.8,United States,anonymous,Unknown
+80,http://104.148.36.10:80,3,3,Unknown,104.148.36.10,Unknown,anonymous,Unknown

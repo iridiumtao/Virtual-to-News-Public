@@ -1,7 +1,0 @@
-torch>=1.5.0
-tqdm>=4.27
-transformers>=3.5.0
-
-networkx==2.6.3 #2.7.0 is not work
-
-#to do
