@@ -1,17 +1,17 @@
 # Virtual to News
 
-To be done.
+AI Editor-in-Chief and Virtual News Presenter: An Artificial Intelligence-Based Pipeline for Automated News Production
 
 ## Introduction 簡介
 
-To be done.
+The “AI Editor-in-Chief” collects news from different websites, compiles different viewpoints, and reorganizes them into new news articles, accomplished with web crawling, natural language processing (CKIP Transformers, TextRank, TF-IDF, BERT), and Google Trends
 
-## Features 特色
+The “Virtual News Presenter” generates videos of cute anime characters reporting news to make news-consuming entertaining, utilizes speech generating, lip syncing, facial landmark estimating, and Live2d with Unity
 
-- Web crawling
-- News keywords extraction
-- Trending keywords analysis
-- News database management
+## Architecture 特色
+
+![Architecture](https://github.com/iridiumtao/Virtual-to-News-Public/assets/43561001/29602cc3-2313-41e4-848d-9c8707ae700f)
+
 
 ### CPU及GPU支援性
 
